@@ -9,11 +9,12 @@ def calculator():
     while True:
 #     read input (e.g. + 1 2)
         nums_input = input("Enter your equation: ")
-#     tokenize input
+# tokenize input
         tokens = nums_input.split(' ')
         print(tokens)
 #         if the first token is "q":
-            
+        if tokens[0] == "q":
+            break
 #             quit
 calculator()
 
