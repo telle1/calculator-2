@@ -17,8 +17,9 @@ def calculator():
             #quit
             break
         elif tokens[0] == "+":
-            print(add(int(tokens[1], tokens[2])))
-            
+            print(add(int(tokens[1]), int(tokens[2])))
+        elif tokens[0] == "-":
+            print(subtract(int(tokens[1]), int(tokens[2])))
 #         else:
 #             (decide which math function to call based on first token)
 #             if the first token is 'pow':
