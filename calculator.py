@@ -14,13 +14,15 @@ def calculator():
         print(tokens)
 #         if the first token is "q":
         if tokens[0] == "q":
+            #quit
             break
-#             quit
-calculator()
-
+        elif tokens[0] == "+":
+            print(add(int(tokens[1], tokens[2])))
+            
 #         else:
 #             (decide which math function to call based on first token)
 #             if the first token is 'pow':
 #                   call the power function with the other two tokens
 
 #             (...etc.)
+calculator()
