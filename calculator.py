@@ -11,7 +11,6 @@ def calculator():
         nums_input = input("Enter your equation: ")
 # tokenize input
         tokens = nums_input.split(' ')
-        print(tokens)
 #         if the first token is "q":
         if tokens[0] == "q":
             #quit
@@ -28,4 +27,7 @@ def calculator():
             print(square(int(tokens[1])))
         elif tokens[0] == "cube":
             print(cube(int(tokens[1])))
+        elif tokens[0] == "pow":
+            print(power(int(tokens[1]), int(tokens[2])))
+
 calculator()
